@@ -1,0 +1,313 @@
+<!DOCTYPE HTML>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r95/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.16/vanta.globe.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.16/vanta.birds.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.16/vanta.net.min.js"></script>
+
+<html>
+	<head>
+		<title>LIKEON TECH</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">Who we are</a></li>
+							<li><a href="#two">What we do</a></li>
+							<li><a href="#three">Get in touch</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>LIKEON TECH</h1>
+							<p>an aspiring IT company that delivers advanced ICT solutions
+								and services, guiding clients through their business and digital
+								transformations.</p>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
+      <script>
+        /*const effect = VANTA.WAVES({
+          el: "#intro",
+          mouseControls: true,
+          touchControls: true,
+          minHeight: 400.0,
+          minWidth: 400.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          waveHeight: 20.0,
+          color: 0x7324d,
+          waveSpeed: 0.5,
+        });*/
+		const effect = VANTA.GLOBE({
+			el: "#intro",
+			mouseControls: true,
+			touchControls: true,
+			gyroControls: false,
+			minHeight: 200.00,
+			minWidth: 200.00,
+			scale: 1.00,
+			scaleMobile: 1.00,
+			color: 0x34c3ed,
+			size: 1.10,
+			backgroundColor: 0x2a5d96
+		  });
+
+        //horizon scrollbar fix... sort of.
+        window.onload = function () {
+          window.dispatchEvent(new Event("resize"));
+        };
+
+		document.addEventListener("DOMContentLoaded", function() {
+			const effect1 = VANTA.BIRDS({
+			  el: "#three",
+			  mouseControls: true,
+			touchControls: true,
+			gyroControls: false,
+			minHeight: 200.00,
+			minWidth: 200.00,
+			scale: 1.00,
+			scaleMobile: 1.00,
+			backgroundColor: 0x2a5d96,
+			color1: 0x60c4e8,
+			color2: 0xbcc6d2,
+			birdSize: 0.50,
+			wingSpan: 11.00,
+			speedLimit: 4.00,
+			separation: 45.00,
+			alignment: 8.00,
+			cohesion: 66.00,
+			quantity: 3.00
+			});
+		  
+
+		  const effect2 = VANTA.NET({
+			el: "#two",
+			mouseControls: true,
+			touchControls: true,
+			gyroControls: false,
+			minHeight: 200.00,
+			minWidth: 200.00,
+			scale: 1.00,
+			scaleMobile: 1.00,
+			color: 0x34c3ed,
+			backgroundColor: 0x2a5d96,
+			points: 20.00,
+			maxDistance: 14.00,
+			spacing: 12.00
+		  });
+
+		  const effect3 = VANTA.NET({
+			el: "#one",
+			mouseControls: true,
+			touchControls: true,
+			gyroControls: false,
+			minHeight: 200.00,
+			minWidth: 200.00,
+			scale: 1.00,
+			scaleMobile: 1.00,
+			color: 0x34c3ed,
+			backgroundColor: 0x2a5d96,
+			points: 20.00,
+			maxDistance: 14.00,
+			spacing: 12.00
+		  });
+
+		});
+      </script>
+				<!-- One -->
+			<section id="one" class="wrapper style2 spotlights">
+				<!-- Our Core Values -->
+				<section>
+					<a href="#" class="image"><img src="images/cv.png" alt="" data-position="center center" /></a>
+					<div class="content">
+						<div class="inner">
+							<h2>Our Core Values</h2>
+							<p>We are driven by integrity, innovation, and a commitment to excellence. Our team fosters an environment of collaboration and respect, ensuring that we act as trusted partners to our clients and each other.</p>
+							<ul class="actions">
+								<li><a href="#" class="button">Learn more</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<!-- Our Mission -->
+				<section>
+					<a href="#" class="image"><img src="images/mission.jpeg" alt="" data-position="top center" /></a>
+					<div class="content">
+						<div class="inner">
+							<h2>Our Mission</h2>
+							<p>To empower our clients with innovative solutions that drive success and make a meaningful impact. We strive to consistently deliver exceptional service and to create value for all stakeholders.</p>
+							<ul class="actions">
+								<li><a href="#" class="button">Learn more</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<!-- Our Vision -->
+				<section>
+					<a href="#" class="image"><img src="images/vision.jpeg" alt="" data-position="25% 25%" /></a>
+					<div class="content">
+						<div class="inner">
+							<h2>Our Vision</h2>
+							<p>To be a global leader in the technology sector, renowned for our ability to innovate and improve the lives of people around the world. We aim to set the standard for quality and sustainability in the industry.</p>
+							<ul class="actions">
+								<li><a href="#" class="button">Learn more</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</section>
+
+
+				<!-- Two -->
+				<section id="two" class="wrapper style3 fade-up">
+					<div class="inner">
+						<h2>What We Offer</h2>
+						<p>Start with LIKEON TECH today! You have an idea, we have engineers to convert your ideas into reality.</p>
+						<div class="features">
+							<section>
+								<span class="icon solid major fa-database"></span>
+								<h3>DAMAS</h3>
+								<p>We help organizations through our BI solution to provide more insights of their RAW data & translate data into intelligent insights to facilitate decision-making.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-cloud"></span>
+								<h3>Digital Cloud Services</h3>
+								<p>We develop practical data-driven algorithms to build machine learning solutions for businesses by classifying the AI hype from computational realities.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-link"></span>
+								<h3>Blockchain Technology</h3>
+								<p>Have you got an app idea? We build mobile applications that help you to grab billion-dollar funds and make it an award-winning project.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-chart-bar"></span>
+								<h3>Big Data & Analytics</h3>
+								<p>We develop high-performance websites, and web applications based on your business needs to deliver user experience more than client expectations.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-search"></span>
+								<h3>Digital Research & Data Analytics</h3>
+								<p>Are you ready to grow your business and take it to new heights? Well, GEAR UP because we have the top-notch Digital Marketing services for you.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-brain"></span>
+								<h3>Advanced Data Analytics & Data Science</h3>
+								<p>Whether your business needs an augmentation of your current staffing levels, or a complete IT staffing solution, we have the resources to support your technology operations.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-sitemap"></span>
+								<h3>Business Intelligence & Data Visualization</h3>
+								<p>We develop high-performance websites, and web applications based on your business needs to deliver user experience more than client expectations.</p>
+							</section>
+							<section>
+								<span class="icon solid major fa-chart-line"></span>
+								<h3>Digital Marketing & Analytics</h3>
+								<p>Are you ready to grow your business and take it to new heights? Well, GEAR UP because we have the top-notch Digital Marketing services for you.</p>
+							</section>
+						</div>
+						<ul class="actions">
+							<li><a href="#" class="button">Learn more</a></li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>We're always here to help and would love to hear from you! Whether you have a question about our services, need assistance, or just want to give feedback, feel free to reach out. Here’s how you can connect with us:</p>
+							<div class="split style1">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<span>AKSHAYA HQ, Padur,<br />
+											Chennai - 603103<br />
+											Tamil Nadu</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">info@likeontech.com</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>+91 8148372405<br />
+											+91 8148372406</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; LikeOn Tech Pvt Ltd. All rights reserved.</li></ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
